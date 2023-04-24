@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>React to post</title>
+		<link rel="stylesheet" href="/stylesheets/style.css" />
+		<link rel="stylesheet" href="/css/all.min.css" />
+	</head>
+	<body>
+		<div class="card-container">
+			<div class="card-header">
+				<span>
+					<img
+						src="/images/profile.webp"
+						alt=""
+						class="card-header-user-profile"
+				/></span>
+				<div>
+					<p class="card-header-user-name">Menai Ala Eddine</p>
+					<p class="card-header-user-followers">
+						<span>25</span>
+						Followers
+					</p>
+					<p class="card-header-published-date">21-04-2023</p>
+				</div>
+
+				<div class="card-header-more-action"></div>
+			</div>
+			<div class="card-body">
+				<p class="card-body-text">
+					Exciting news! We've moved to a new office and we couldn't be happier.
+					Come visit us at our new location and see our awesome new digs!
+					#newoffice #excitingtimes #startuplife
+				</p>
+				<img src="/images/post-image.jpg" alt="" class="card-body-post-image" />
+			</div>
+			<div class="card-actions-container">
+				<span id="like-post" class="<%= liked ? 'liked-status' : '' %>">
+					<i class="fa-regular fa-heart" style="font-size: 24px"></i>
+					<p class="card-actions-like"><%= liked ? 'Liked' : 'Like' %></p>
+				</span>
+				<span>
+					<i class="fa-regular fa-comment" style="font-size: 24px"></i>
+					<p class="card-actions-comment">Comment</p>
+				</span>
+				<span>
+					<i
+						class="fa-regular fa-share-from-square"
+						style="font-size: 24px"
+					></i>
+					<p class="card-actions-share">Share</p>
+				</span>
+			</div>
+		</div>
+		<script type="module" src="/javascripts/index.js"></script>
+	</body>
+</html>

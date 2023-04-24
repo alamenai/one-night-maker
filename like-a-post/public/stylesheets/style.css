@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--accent-color: rgb(117, 117, 117);
+	--s: 4px;
+	--m: 8px;
+	--l: 16px;
+	--x: 32px;
+	--2x: 64px;
+	--w-m: 600;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-container {
+	background-color: rgba(223, 223, 223, 0.5);
+	max-width: 600px;
+	height: fit-content;
+	margin-top: var(--2x);
+	border-radius: var(--m);
+}
+
+@media screen and (max-width: 768px) {
+	.card-container {
+		max-width: 80%;
+	}
+}
+
+.card-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 100px;
+	padding: var(--l);
+}
+
+.card-header > div {
+	display: block;
+	padding-left: 16px;
+}
+
+.card-header-user-name {
+	font-size: var(--l);
+	font-weight: var(--w-m);
+}
+
+.card-body-post-image {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.card-header-user-profile {
+	border-radius: 50%;
+	height: 80px;
+	width: 80px;
+	max-height: 100%;
+	object-fit: cover;
+	background: linear-gradient(45deg, rgb(255, 9, 222), rgb(132, 0, 255));
+	padding: 3px;
+}
+
+.card-header-user-followers {
+	font-size: calc(var(--l) - 2px);
+	margin-top: var(--m);
+}
+
+.card-header-user-followers > span {
+	font-weight: var(--w-m);
+}
+
+.card-header-published-date {
+	font-size: calc(var(--l) - var(--s));
+	color: var(--accent-color);
+	margin-top: var(--s);
+}
+
+.card-body-text {
+	font-size: var(--l);
+	padding: var(--m);
+	line-height: var(--x);
+	margin: var(--s);
+}
+
+.card-actions-container {
+	padding: var(--l);
+	display: flex;
+}
+
+.card-actions-container span {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.card-actions-container span:nth-of-type(2) {
+	justify-content: center;
+}
+
+.card-actions-container span:last-of-type {
+	justify-content: flex-end;
+}
+
+.card-actions-container span p {
+	margin-left: var(--m);
+}
+
+.liked-status {
+	color: red;
+}

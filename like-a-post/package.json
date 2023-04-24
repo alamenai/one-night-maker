@@ -1,0 +1,25 @@
+{
+	"name": "react-to-post",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"start": "nodemon ./bin/www"
+	},
+	"dependencies": {
+		"@fortawesome/fontawesome-free": "^6.4.0",
+		"@prisma/client": "^4.13.0",
+		"cookie-parser": "~1.4.4",
+		"debug": "~2.6.9",
+		"ejs": "^3.1.9",
+		"express": "^4.18.2",
+		"font-awesome": "^4.7.0",
+		"http-errors": "~1.6.3",
+		"morgan": "~1.9.1",
+		"nodemon": "^2.0.22"
+	},
+	"devDependencies": {
+		"prisma": "^4.13.0",
+		"webpack-dev-middleware": "^6.0.2",
+		"webpack-hot-middleware": "^2.25.3"
+	}
+}
