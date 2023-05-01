@@ -1,0 +1,11 @@
+{
+    "sqltools.useNodeRuntime": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:one-night-maker}/next-auth/prisma/dev.db",
+            "name": "authentication"
+        }
+    ]
+}
