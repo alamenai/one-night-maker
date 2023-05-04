@@ -1,0 +1,26 @@
+.Skeleton {
+	width: 200px;
+	padding-bottom: 200px; /* maintain aspect ratio */
+	border-radius: 50%;
+	background-color: #f5f5f5; /* light gray background */
+	background-image: linear-gradient(
+		to right,
+		#f5f5f5 0%,
+		#e8e8e8 20%,
+		#f5f5f5 40%,
+		#f5f5f5 100%
+	); /* animated gradient background */
+	background-size: 800px 200px; /* adjust as needed */
+	background-repeat: no-repeat;
+	background-position: -200px 0px;
+	animation: loading 1.5s ease-in-out infinite;
+}
+
+@keyframes loading {
+	from {
+		background-position: -200px 0px;
+	}
+	to {
+		background-position: calc(200px + 200px) 0;
+	}
+}
